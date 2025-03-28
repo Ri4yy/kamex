@@ -1151,6 +1151,7 @@ h3 {
   .rent__wrapper {
     margin-top: 52px;
     row-gap: 42px;
+    grid-template-columns: 1fr;
   }
 }
 .rent__item {
