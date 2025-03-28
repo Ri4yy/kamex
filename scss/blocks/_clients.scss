@@ -1,0 +1,47 @@
+.clients {
+
+    &__wrapper {
+        margin-top: 48px;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 52px;
+        justify-content: space-between;
+        align-items: center;
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 30px;
+        }
+        @media(max-width: $breakpoint480) {
+            margin-top: 20px;
+            column-gap: 26px;
+            row-gap: 40px;
+
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+        @media(max-width: $breakpoint375) {
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+        }
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+            & img {
+                filter: brightness(1) invert(0);
+            }
+        }
+
+        & img {
+            filter: brightness(0) invert(1);
+            transition: all .3s;
+
+            @media(max-width: $breakpoint480) {
+                max-width: 150px;
+            }
+        }
+    }
+} 

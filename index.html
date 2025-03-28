@@ -4,38 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="stylesheet" href="./assets/libs/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="/assets/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
                 <a href="/" class="logo">
-                    <img src="" alt="">
+                    <img src="/assets/img/icons/logo.svg" alt="">
                 </a>
                 <nav class="menu">
                     <ul class="menu-nav">
                         <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link menu-nav__link--active">Ссылка 1</a>
+                            <a href="#rent" class="menu-nav__link">аренда</a>
                         </li>
                         <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Ссылка 2</a>
+                            <a href="#price" class="menu-nav__link">цены</a>
                         </li>
                         <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Ссылка 3</a>
+                            <a href="#about" class="menu-nav__link">о компании</a>
                         </li>
                         <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Ссылка 4</a>
+                            <a href="#reviews" class="menu-nav__link">отзывы</a>
                         </li>
                         <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Ссылка 5</a>
+                            <a href="#contacts" class="menu-nav__link">контакты</a>
                         </li>
                     </ul>
                 </nav>
-                <div class="header__contacts">
-                    <a href="tel:" class="header__phone">8 (999) 999-99-99</a>
-                    <a href="mailto:" class="header__mail">test-test@test.ru</a>
+                <div class="header__right">
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link">
+                                <img src="/assets/img/icons/i-tg.svg" class="social-list__icon" alt="">
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link">
+                                <img src="/assets/img/icons/i-viber.svg" class="social-list__icon" alt="">
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link">
+                                <img src="/assets/img/icons/i-wa.svg" class="social-list__icon" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="header__btn open-modal">
+                        <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4508 2.47317C16.5997 1.85738 17.1702 1.49215 17.7251 1.65742C19.6655 2.23543 21.4349 3.36975 22.8556 4.94654C24.2763 6.52333 25.2983 8.48712 25.8191 10.6408C25.968 11.2566 25.6389 11.8898 25.0841 12.055C24.5293 12.2203 23.9588 11.8551 23.8099 11.2393C23.3837 9.47673 22.5473 7.86959 21.3846 6.57916C20.2219 5.28873 18.7739 4.36042 17.1858 3.88739C16.631 3.72212 16.3019 3.08895 16.4508 2.47317Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3701 6.93604C15.5175 6.31982 16.0871 5.95294 16.6424 6.1166C17.8807 6.48161 19.0101 7.20346 19.916 8.209C20.822 9.21453 21.4724 10.468 21.8013 11.8424C21.9487 12.4586 21.6182 13.0908 21.063 13.2545C20.5078 13.4181 19.9381 13.0513 19.7907 12.4351C19.5559 11.454 19.0917 10.5593 18.445 9.84162C17.7984 9.1239 16.9923 8.60866 16.1084 8.34812C15.5532 8.18447 15.2226 7.55225 15.3701 6.93604Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.24732 0.530861C7.69688 0.466851 8.15294 0.568593 8.54531 0.820436C8.93593 1.07116 9.24185 1.4568 9.41648 1.91845L12.0261 8.6766L12.0272 8.6795C12.1623 9.02605 12.2188 9.4041 12.1916 9.78052C12.1644 10.158 12.054 10.5222 11.87 10.8412L11.8632 10.8531L9.69596 14.5114C10.6632 16.7255 12.2764 18.5116 14.2736 19.5798L14.2778 19.5766L17.5257 17.1686C17.8139 16.9526 18.1466 16.8208 18.493 16.7854C18.8393 16.75 19.1881 16.8121 19.507 16.9661L19.5109 16.968L25.5851 19.8634C26.0008 20.0572 26.3481 20.3967 26.5739 20.83C26.8008 21.2655 26.8925 21.7717 26.8348 22.2706C26.6098 24.2198 25.7526 26.0111 24.4236 27.3095C23.0947 28.6079 21.385 29.3243 19.6145 29.3247C14.6489 29.3247 9.8865 27.1354 6.37533 23.2385C2.86416 19.3415 0.891602 14.056 0.891602 8.54485C0.892001 6.5798 1.53751 4.68197 2.70734 3.20697C3.8771 1.73206 5.4913 0.780659 7.24732 0.530861ZM8.7577 15.0097L7.81946 15.5081C7.66585 15.1518 7.59715 14.7578 7.61991 14.3637C7.64267 13.9695 7.75615 13.5885 7.94948 13.2569L7.95357 13.2499L10.1179 9.5963L10.116 9.59126L7.50261 2.82336C6.25189 3.0038 5.10235 3.6816 4.26885 4.73252C3.43331 5.78603 2.97223 7.14133 2.97189 8.54485M8.7577 15.0097L7.82154 15.5129C8.9943 18.2008 10.9526 20.3688 13.3775 21.6635L13.3833 21.6665C13.7098 21.8381 14.0709 21.9124 14.4311 21.882C14.7904 21.8517 15.1364 21.7184 15.4353 21.4951L15.4376 21.4934L18.6838 19.0867L24.7685 21.987L24.7701 21.9878C24.6076 23.3759 23.996 24.6513 23.0491 25.5764C22.0999 26.5038 20.8788 27.0155 19.6142 27.0159M2.97189 8.54485C2.97195 13.4436 4.72533 18.1419 7.84632 21.6058C10.9673 25.0698 15.2005 27.0158 19.6142 27.0159"/>
+                        </svg>
+                        Обратный звонок
+                    </button>
                 </div>
                 <button class="btn-menu">
                     <span></span>
@@ -44,11 +67,842 @@
                 </button>
             </div>
         </div>
+        <div class="header-mobile">
+            <div class="header-mobile__wrapper">
+                <ul class="header-mobile__list">
+                    <li class="header-mobile__item">
+                        <a href="#rent" class="header-mobile__link">аренда</a>
+                    </li>
+                    <li class="header-mobile__item">
+                        <a href="#price" class="header-mobile__link">цены</a>
+                    </li>
+                    <li class="header-mobile__item">
+                        <a href="#about" class="header-mobile__link">о компании</a>
+                    </li>
+                    <li class="header-mobile__item">
+                        <a href="#reviews" class="header-mobile__link">отзывы</a>
+                    </li>
+                    <li class="header-mobile__item">
+                        <a href="#contacts" class="header-mobile__link">контакты</a>
+                    </li>
+                </ul>
+                <div class="header-mobile__bottom">
+                    <p class="header-mobile__text">Свяжитесь с нами:</p>
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link">
+                                <img src="/assets/img/icons/i-tg.svg" class="social-list__icon" alt="">
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link">
+                                <img src="/assets/img/icons/i-viber.svg" class="social-list__icon" alt="">
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link">
+                                <img src="/assets/img/icons/i-wa.svg" class="social-list__icon" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="header-mobile__btn">
+                        <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4508 2.47317C16.5997 1.85738 17.1702 1.49215 17.7251 1.65742C19.6655 2.23543 21.4349 3.36975 22.8556 4.94654C24.2763 6.52333 25.2983 8.48712 25.8191 10.6408C25.968 11.2566 25.6389 11.8898 25.0841 12.055C24.5293 12.2203 23.9588 11.8551 23.8099 11.2393C23.3837 9.47673 22.5473 7.86959 21.3846 6.57916C20.2219 5.28873 18.7739 4.36042 17.1858 3.88739C16.631 3.72212 16.3019 3.08895 16.4508 2.47317Z" fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3701 6.93604C15.5175 6.31982 16.0871 5.95294 16.6424 6.1166C17.8807 6.48161 19.0101 7.20346 19.916 8.209C20.822 9.21453 21.4724 10.468 21.8013 11.8424C21.9487 12.4586 21.6182 13.0908 21.063 13.2545C20.5078 13.4181 19.9381 13.0513 19.7907 12.4351C19.5559 11.454 19.0917 10.5593 18.445 9.84162C17.7984 9.1239 16.9923 8.60866 16.1084 8.34812C15.5532 8.18447 15.2226 7.55225 15.3701 6.93604Z" fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.24732 0.530861C7.69688 0.466851 8.15294 0.568593 8.54531 0.820436C8.93593 1.07116 9.24185 1.4568 9.41648 1.91845L12.0261 8.6766L12.0272 8.6795C12.1623 9.02605 12.2188 9.4041 12.1916 9.78052C12.1644 10.158 12.054 10.5222 11.87 10.8412L11.8632 10.8531L9.69596 14.5114C10.6632 16.7255 12.2764 18.5116 14.2736 19.5798L14.2778 19.5766L17.5257 17.1686C17.8139 16.9526 18.1466 16.8208 18.493 16.7854C18.8393 16.75 19.1881 16.8121 19.507 16.9661L19.5109 16.968L25.5851 19.8634C26.0008 20.0572 26.3481 20.3967 26.5739 20.83C26.8008 21.2655 26.8925 21.7717 26.8348 22.2706C26.6098 24.2198 25.7526 26.0111 24.4236 27.3095C23.0947 28.6079 21.385 29.3243 19.6145 29.3247C14.6489 29.3247 9.8865 27.1354 6.37533 23.2385C2.86416 19.3415 0.891602 14.056 0.891602 8.54485C0.892001 6.5798 1.53751 4.68197 2.70734 3.20697C3.8771 1.73206 5.4913 0.780659 7.24732 0.530861ZM8.7577 15.0097L7.81946 15.5081C7.66585 15.1518 7.59715 14.7578 7.61991 14.3637C7.64267 13.9695 7.75615 13.5885 7.94948 13.2569L7.95357 13.2499L10.1179 9.5963L10.116 9.59126L7.50261 2.82336C6.25189 3.0038 5.10235 3.6816 4.26885 4.73252C3.43331 5.78603 2.97223 7.14133 2.97189 8.54485M8.7577 15.0097L7.82154 15.5129C8.9943 18.2008 10.9526 20.3688 13.3775 21.6635L13.3833 21.6665C13.7098 21.8381 14.0709 21.9124 14.4311 21.882C14.7904 21.8517 15.1364 21.7184 15.4353 21.4951L15.4376 21.4934L18.6838 19.0867L24.7685 21.987L24.7701 21.9878C24.6076 23.3759 23.996 24.6513 23.0491 25.5764C22.0999 26.5038 20.8788 27.0155 19.6142 27.0159M2.97189 8.54485C2.97195 13.4436 4.72533 18.1419 7.84632 21.6058C10.9673 25.0698 15.2005 27.0158 19.6142 27.0159" fill="white" />
+                        </svg>
+                        Обратный звонок
+                    </button>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <script src="./assets/libs/jquery.min.js"></script>
-    <script src="./assets/libs/swiper-bundle.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/swiper.js"></script>
+    <main>
+        <!-- Баннер -->
+        <section class="section section--banner">
+            <div class="container">
+                <div class="banner-head">
+                    <h1 class="banner-head__title">Услуги экскаватора 
+                        ООО"Камэкс"</h1>
+                    <p class="banner-head__subtitle">Быстро, выгодно, надёжно!</p>
+                    <div class="banner-head__wrapper">
+                        <div class="banner-head__inner">
+                            <img src="/assets/img/icons/i-banner.svg" alt="" class="banner-head__inner-icon">
+                            <div class="banner-head__inner-right">
+                                <p class="banner-head__inner-title">ЛЕТ</p>
+                                <p class="banner-head__inner-text">деятельности компании</p>
+                            </div>
+                        </div>
+                        <div class="banner-head__hit">
+                            <div class="banner-head__hit-wrapper">
+                                <p class="banner-head__hit-title">-10%</p>
+                                <p class="banner-head__hit-text">ПРИ ЗАКАЗЕ ТЕХНИКИ ОТ 20 СМЕН</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="banner__wrapper">
+                        <div class="banner__left">
+                            <h1 class="banner__title">Услуги экскаватора 
+                                ООО"Камэкс"</h1>
+                            <p class="banner__subtitle">Быстро, выгодно, надёжно!</p>
+                            <div class="banner__inner">
+                                <img src="/assets/img/icons/i-banner.svg" alt="" class="banner__inner-icon">
+                                <div class="banner__inner-right">
+                                    <p class="banner__inner-title">ЛЕТ</p>
+                                    <p class="banner__inner-text">деятельности компании</p>
+                                </div>
+                            </div>
+                            <button class="banner__btn banner__btn--desktop">
+                                Заказать спецтехнику
+                            </button>
+                        </div>
+                    </div>
+                    <div class="banner__hit">
+                        <div class="banner__hit-wrapper">
+                            <p class="banner__hit-title">-10%</p>
+                            <p class="banner__hit-text">ПРИ ЗАКАЗЕ ТЕХНИКИ ОТ 20 СМЕН</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="banner__btn banner__btn--mobile">
+                    Заказать спецтехнику
+                </button>
+            </div>
+        </section>
+
+        <!-- Аренда -->
+        <section class="section section--type-1" id="rent">
+            <div class="container">
+                <div class="rent">
+                    <h2>АРЕНДА</h2>
+                    <p class="rent__subtitle">Услуги спецтехники:</p>
+                    <div class="rent__wrapper">
+                        <div class="rent__item">
+                            <div class="rent__item-wrapper">
+                                <div class="rent__item-img">
+                                    <img src="/assets/img/rent/rent-1.png" alt="">
+                                </div>
+                                <div class="rent__item-right">
+                                    <p class="rent__item-text">услуги крашера</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rent__item">
+                            <div class="rent__item-wrapper">
+                                <div class="rent__item-img">
+                                    <img src="/assets/img/rent/rent-2.png" alt="">
+                                </div>
+                                <div class="rent__item-right">
+                                    <p class="rent__item-text">аренда<br> экскаватора</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rent__item">
+                            <div class="rent__item-wrapper">
+                                <div class="rent__item-img">
+                                    <img src="/assets/img/rent/rent-3.png" alt="">
+                                </div>
+                                <div class="rent__item-right">
+                                    <p class="rent__item-text">                   <p class="rent__item-text">аренда<br> самосвала</p>
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rent__item">
+                            <div class="rent__item-wrapper">
+                                <div class="rent__item-img">
+                                    <img src="/assets/img/rent/rent-4.png" alt="">
+                                </div>
+                                <div class="rent__item-right">
+                                    <p class="rent__item-text">аренда экскаватора погрузчика</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rent__item">
+                            <div class="rent__item-wrapper">
+                                <div class="rent__item-img">
+                                    <img src="/assets/img/rent/rent-5.png" alt="">
+                                </div>
+                                <div class="rent__item-right">
+                                    <p class="rent__item-text">услуги<br> гидромолота</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rent__item">
+                            <div class="rent__item-wrapper">
+                                <div class="rent__item-img">
+                                    <img src="/assets/img/rent/rent-6.png" alt="">
+                                </div>
+                                <div class="rent__item-right">
+                                    <p class="rent__item-text">аренда трала</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rent__bottom">
+                        <button class="rent__btn">
+                            Заказать спецтехнику
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Успейте купить -->
+        <section class="section section--type-1 section--order">
+            <div class="container">
+                <div class="order">
+                    <div class="order__wrapper">
+                        <h2 class="order__title">Успейте купить!</h2>
+                        <p class="order__subtitle">Осуществляем продажу и доставку песка и инертных материалов</p>
+                        <ul class="order__list">
+                            <li class="order__item">
+                                <p class="order__text">Песок по цене: от 80 рублей/тонна.</p>
+                            </li>
+                            <li class="order__item">
+                                <p class="order__text">Купить песок: от 100 кг - до 30 тонн (рейс). Возможен самовывоз: от 10 машин.</p>
+                            </li>
+                        </ul>
+                        <div class="order__bottom">
+                            <button class="order__btn">
+                                Заказать звонок
+                            </button>
+                            <ul class="social-list">
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link">
+                                        <img src="/assets/img/icons/i-tg.svg" class="social-list__icon" alt="">
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link">
+                                        <img src="/assets/img/icons/i-viber.svg" class="social-list__icon" alt="">
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link">
+                                        <img src="/assets/img/icons/i-wa.svg" class="social-list__icon" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img src="/assets/img/photo/order.png" class="order__img" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Цены на аренду спецтехники -->
+        <section class="section section--type-1" id="price">
+            <div class="container">
+                <div class="catalog">
+                    <h2>Цены на аренду спецтехники</h2>
+                    <div class="catalog__wrapper">
+                        <div class="catalog__item">
+                            <div class="catalog-card">
+                                <div class="catalog-card__img">
+                                    <img src="/assets/img/catalog/card-1.png" alt="">
+                                </div>
+                                <div class="catalog-card__wrapper">
+                                    <div class="catalog-card__inner">
+                                        <p class="catalog-card__name">Колесный экскаватор <span>Hyundai 170</span></p>
+                                        <ul class="catalog-card__list">
+                                            <li class="catalog-card__item">
+                                                <p class="catalog-card__item-text">18 400 ₽ <span>/ смена</span></p>
+                                            </li>
+                                            <li class="catalog-card__item">
+                                                <p class="catalog-card__item-text">2 300 ₽ <span>/ час</span></p>
+                                            </li>
+                                            <li class="catalog-card__item">
+                                                <p class="catalog-card__item-text">1 800 ₽ <span>/ доставка</span></p>
+                                            </li>
+                                        </ul>
+                                        <p class="catalog-card__text">При заказе 20 смен – <span>скидка до 10%</span></p>
+                                    </div>
+                                    <div class="catalog-card__bottom">
+                                        <button class="catalog-card__btn">
+                                            ЗАКАЗАТЬ СПЕЦТЕХНИКУ
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="catalog-card">
+                                <div class="catalog-card__img">
+                                    <img src="/assets/img/catalog/card-2.png" alt="">
+                                </div>
+                                <div class="catalog-card__wrapper">
+                                    <div class="catalog-card__inner">
+                                        <p class="catalog-card__name"><span>Трал</span></p>
+                                        <ul class="catalog-card__list">
+                                            <li class="catalog-card__item">
+                                                <p class="catalog-card__item-text">18 400 ₽ <span>/ смена</span></p>
+                                            </li>
+                                            <li class="catalog-card__item">
+                                                <p class="catalog-card__item-text">2 300 ₽ <span>/ час</span></p>
+                                            </li>
+                                            <li class="catalog-card__item">
+                                                <p class="catalog-card__item-text">1 800 ₽ <span>/ доставка</span></p>
+                                            </li>
+                                        </ul>
+                                        <p class="catalog-card__text">При заказе 20 смен – <span>скидка до 10%</span></p>
+                                    </div>
+                                    <div class="catalog-card__bottom">
+                                        <button class="catalog-card__btn">
+                                            ЗАКАЗАТЬ СПЕЦТЕХНИКУ
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Как мы работаем -->
+        <section class="section section--type-1">
+            <div class="container">
+                <div class="work">
+                    <h2>Как мы работаем</h2>
+                    <div class="work__wrapper">
+                        <div class="work__item">
+                            <div class="work__left">
+                                <span class="work__left-number">1</span>
+                            </div>
+                            <div class="work__right">
+                                <p class="work__text">
+                                    Вы оставляете заявку или звоните нам 
+                                    по номеру 8-903-345-56-90
+                                    Можете связаться с нами сообщением 
+                                    в WhatsApp, Telegram или Viber
+                                </p>
+                            </div>
+                        </div>
+                        <div class="work__item">
+                            <div class="work__left">
+                                <span class="work__left-number">2</span>
+                            </div>
+                            <div class="work__right">
+                                <p class="work__text">
+                                    Утверждаем выбранную технику, дату поставки, срок и условия работ. Определяем конкретную технику, наилучшим образом решающую Ваши задачи и оформляем предварительный заказ
+                                </p>
+                            </div>
+                        </div>
+                        <div class="work__item">
+                            <div class="work__left">
+                                <span class="work__left-number">3</span>
+                            </div>
+                            <div class="work__right">
+                                <p class="work__text">
+                                    Выбираем один из вариантов оплаты, утверждаем конечную стоимость. Предлагаем наиболее подходящий для Вас формат оплаты: за машино-часы, м³, тонны, гектары или за сутки аренды
+                                </p>
+                            </div>
+                        </div>
+                        <div class="work__item">
+                            <div class="work__left">
+                                <span class="work__left-number">4</span>
+                            </div>
+                            <div class="work__right">
+                                <p class="work__text">
+                                    Получаем Ваши реквизиты, заключаем договор и выставляем счет на оплату
+                                </p>
+                            </div>
+                        </div>
+                        <div class="work__item">
+                            <div class="work__left">
+                                <span class="work__left-number">5</span>
+                            </div>
+                            <div class="work__right">
+                                <p class="work__text">
+                                    После получения оплаты организуем перебазировку техники на объект заказчика в назначенный день
+                                </p>
+                            </div>
+                        </div>
+                        <div class="work__item">
+                            <div class="work__left">
+                                <span class="work__left-number">6</span>
+                            </div>
+                            <div class="work__right">
+                                <p class="work__text">
+                                    Выполняем работы и регулярно заполняем первичную документацию. Предоставляем полный комплект закрывающих документов
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- О компании -->
+        <section class="section section--type-1" id="about">
+            <div class="container">
+                <div class="about">
+                    <h2>О КОМПАНИИ</h2>
+                    <div class="about__wrapper">
+                        <div class="about__left">
+                            <p class="about__text">
+                                <span>ООО «КАМЭКС»</span> — надежный оператор на рынке аренды грузового транспорта и строительной техники в Чувашии более 18 лет. Мы предоставляем услуги в Приволжском федеральном округе, включая Чебоксары, Казань, Нижний Новгород и другие города.
+                            </p>
+                            <p class="about__text">
+                                Компания занимает ведущие позиции в аренде спецтехники, предлагая широкий ассортимент современного оборудования. Мы гарантируем высокое качество услуг, индивидуальный подход и полное обслуживание на каждом этапе сотрудничества.
+                            </p>
+                        </div>
+                        <div class="about__slider">
+                            <div class="swiper swiper-about">
+                                <div class="swiper-wrapper swiper-about__wrapper">
+                                    <a href="" class="swiper-slide swiper-about__slide">
+                                        <img src="/assets/img/photo/about-slide.png" class="swiper-about__img" alt="">
+                                    </a>
+                                    <a href="" class="swiper-slide swiper-about__slide">
+                                        <img src="/assets/img/photo/about-slide.png" class="swiper-about__img" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-pagination swiper-about__pagination"></div>
+                              
+                                <div class="swiper-about__btn swiper-about__btn--prev">
+                                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M-3.57628e-07 8L8.09428 9.53674e-07L10 1.88087L3.80471 8L10 14.1178L8.09562 16L-3.57628e-07 8Z" fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="swiper-about__btn swiper-about__btn--next">
+                                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 8L1.90572 -9.53674e-07L0 1.88086L6.19529 8L0 14.1178L1.90438 16L10 8Z" fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section class="section section--type-1">
+            <div class="container">
+                <div class="advantages">
+                    <h2>Преимущества</h2>
+                    <div class="advantages__wrapper">
+                        <div class="advantages__item">
+                            <div class="advantages__icon">
+                                <svg width="75" height="74" viewBox="0 0 75 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32.3356 24.1949L25.535 20.3993V18.5031H34.4477L36.8581 9.25308H38.8503L41.2606 18.5031H50.1242V20.387L43.3697 24.3121L46.0875 32.5939L44.538 33.67L37.8573 28.49L31.1458 33.6916L29.6701 32.5754L32.3417 24.198L32.3356 24.1949ZM54.2562 23.3223L55.7319 24.4385L62.4434 19.2369L69.1241 24.4169L70.6767 23.3408L67.9589 15.059L74.7134 11.1339V9.25H65.8499L63.4395 0H61.4473L59.0369 9.25H50.1242V11.1462L56.9248 14.9418L54.2531 23.3193L54.2562 23.3223ZM5.06547 41.8223L6.54119 42.9385L13.2527 37.7369L19.9334 42.9169L21.486 41.8408L18.7682 33.559L25.5227 29.6339V27.75H16.6591L14.2488 18.5H12.2565L9.8462 27.75H0.936523V29.6462L7.73714 33.4418L5.06547 41.8192V41.8223ZM74.7226 41.625V74H0.936523V60.125C0.936523 55.8762 4.38295 52.4167 8.62258 52.4167H20.9203C21.446 52.4167 21.9594 52.4691 22.4575 52.5708V50.875C22.4575 46.6262 25.9039 43.1667 30.1435 43.1667H42.4412C42.9669 43.1667 43.4804 43.2191 43.9784 43.3208V41.625C43.9784 37.3762 47.4249 33.9167 51.6645 33.9167H67.0366C71.2762 33.9167 74.7226 37.3762 74.7226 41.625ZM28.6063 67.8333H43.9784V50.875C43.9784 50.024 43.2867 49.3333 42.4412 49.3333H30.1435C29.2981 49.3333 28.6063 50.024 28.6063 50.875V67.8333ZM7.08537 67.8333H22.4575V60.125C22.4575 59.274 21.7657 58.5833 20.9203 58.5833H8.62258C7.77711 58.5833 7.08537 59.274 7.08537 60.125V67.8333ZM68.5738 41.625C68.5738 40.774 67.8821 40.0833 67.0366 40.0833H51.6645C50.819 40.0833 50.1273 40.774 50.1273 41.625V67.8333H68.5738V41.625Z" fill="#FFD633" />
+                                </svg>
+                            </div>
+                            <p class="advantages__name">Качество услуг</p>
+                            <p class="advantages__text">Профессиональная команда и высокие стандарты работы.</p>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__icon">
+                                <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.4167 67.8333H43.1667V58.5833H56.2616C57.8032 58.5833 59.1168 57.4333 59.3172 55.9039L61.4138 40.0833H67.5497L66.1159 36.815C62.8013 29.2146 59.3017 21.2657 56.1136 17.3222C50.135 9.33325 40.7308 5.31567 30.8333 6.37942V0.206583C42.6209 -0.844833 53.798 4.0145 60.976 13.5358C64.6606 18.1423 68.1571 26.0696 71.7677 34.3514L74 39.4297V46.25H66.8158L65.4314 56.7117C64.8302 61.2936 60.8866 64.75 56.2616 64.75H49.3333V74H9.25V61.6667H15.4167V67.8333ZM24.6667 0V24.6667H0V0H24.6667ZM22.5823 7.4925L18.2718 3.08333L10.4309 11.1956L5.81825 6.32083L1.54167 10.7639L7.82242 17.3993C9.22533 18.8731 11.5717 18.8823 12.987 17.4208L22.5854 7.48942L22.5823 7.4925ZM24.6667 55.5H0V30.8333H24.6667V55.5ZM18.5 37H6.16667V49.3333H18.5V37Z" fill="#FFD633" />
+                                </svg>
+                            </div>
+                            <p class="advantages__name">Индивидуальный подход</p>
+                            <p class="advantages__text">Решения под ваши требования и сроки.</p>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__icon">
+                                <svg width="74" height="73" viewBox="0 0 74 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M53.3355 19.3911L57.6645 23.7787L36.7225 44.4586C35.5292 45.6518 33.9567 46.25 32.3812 46.25C30.8056 46.25 29.2208 45.6488 28.0152 44.4462L16.3447 33.041L20.6522 28.6287L32.3472 40.0587L53.3355 19.3911ZM74 9.25V61.6667H52.873L41.0114 71.4717C39.8952 72.4645 38.4677 72.964 37.0247 72.964C35.557 72.964 34.0801 72.446 32.9022 71.4007L21.3459 61.6667H0V9.25C0 4.15017 4.15017 0 9.25 0H64.75C69.8498 0 74 4.15017 74 9.25ZM67.8333 9.25C67.8333 7.55108 66.452 6.16667 64.75 6.16667H9.25C7.55108 6.16667 6.16667 7.55108 6.16667 9.25V55.5H23.5998L36.9383 66.7387L50.653 55.5H67.8333V9.25Z" fill="#FFD633" />
+                                </svg>
+                            </div>
+                            <p class="advantages__name">Современное оборудование</p>
+                            <p class="advantages__text">Надежная и исправная спецтехника</p>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__icon">
+                                <svg width="72" height="74" viewBox="0 0 72 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M71.662 58.5833L58.601 72.856C57.2351 74.3792 54.8486 74.3792 53.4827 72.856L40.4217 58.5833H51.4169V26.9791C51.4169 24.0037 48.9965 21.5833 46.021 21.5833C43.0456 21.5833 40.6252 24.0037 40.6252 26.9791V47.0208C40.6252 55.096 34.0546 61.6666 25.9794 61.6666C17.9041 61.6666 11.3335 55.096 11.3335 47.0208V15.4166H0.338379L13.3994 1.14384C14.7653 -0.379327 17.1518 -0.379327 18.5177 1.14384L31.5787 15.4166H20.5835V47.0208C20.5835 49.9962 23.004 52.4166 25.9794 52.4166C28.9548 52.4166 31.3752 49.9962 31.3752 47.0208V26.9791C31.3752 18.9038 37.9458 12.3333 46.021 12.3333C54.0963 12.3333 60.6669 18.9038 60.6669 26.9791V58.5833H71.662Z" fill="#FFD633" />
+                                </svg>
+                            </div>
+                            <p class="advantages__name">Гибкие условия аренды</p>
+                            <p class="advantages__text">Краткосрочная и долгосрочная аренда.</p>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__icon">
+                                <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M74 37C74 38.702 72.6187 40.0833 70.9167 40.0833H69.2178C67.7562 55.4753 55.4753 67.7562 40.0833 69.2177V70.9167C40.0833 72.6187 38.702 74 37 74C35.298 74 33.9167 72.6187 33.9167 70.9167V69.2177C18.5247 67.7562 6.24375 55.4753 4.78225 40.0833H3.08333C1.38133 40.0833 0 38.702 0 37C0 35.298 1.38133 33.9167 3.08333 33.9167H4.79767C5.61167 25.3265 9.77725 17.4239 16.5544 11.8986C17.8741 10.8256 19.8166 11.0167 20.8927 12.3395C21.9688 13.6592 21.7714 15.6017 20.4517 16.6777C15.1207 21.0252 11.7722 27.1888 10.9828 33.9167H15.4198C17.1217 33.9167 18.5031 35.298 18.5031 37C18.5031 38.702 17.1217 40.0833 15.4198 40.0833H10.9921C12.4043 52.0713 21.9318 61.5958 33.9198 63.011V58.5833C33.9198 56.8813 35.3011 55.5 37.0031 55.5C38.7051 55.5 40.0864 56.8813 40.0864 58.5833V63.011C52.0744 61.5988 61.5988 52.0713 63.0141 40.0833H58.5864C56.8844 40.0833 55.5031 38.702 55.5031 37C55.5031 35.298 56.8844 33.9167 58.5864 33.9167H63.0233C62.234 27.1888 58.8855 21.0283 53.5544 16.6777C52.2348 15.6017 52.0374 13.6592 53.1135 12.3395C54.1896 11.0167 56.1352 10.8256 57.4518 11.8986C64.2289 17.4239 68.3945 25.3234 69.2085 33.9167H70.9228C72.6248 33.9167 74.0062 35.298 74.0062 37H74ZM23.4056 28.6842C21.3829 26.4827 21.016 23.2422 22.4868 20.6275L30.6391 3.89425C32.0235 1.406 34.3668 0.00925 36.9907 0C39.6332 0.00925 41.9796 1.406 43.2838 3.737L51.5657 20.7138C52.9778 23.3131 52.5955 26.5043 50.5975 28.6812C48.6427 30.8087 45.6919 31.413 43.0834 30.2321L37 27.4694L30.9166 30.2321C30.0317 30.6329 29.1067 30.8302 28.194 30.8302C26.418 30.8302 24.6944 30.0872 23.4025 28.6812L23.4056 28.6842ZM27.9504 24.5156C28.1385 24.7191 28.2557 24.6698 28.3698 24.6204L35.7266 21.2781C36.5375 20.9112 37.4656 20.9112 38.2765 21.2781L45.6333 24.6204C45.7474 24.6728 45.8646 24.7222 46.0527 24.5156C46.1853 24.3707 46.3733 24.0654 46.139 23.6492C46.1082 23.5968 37.8202 6.59525 37.8202 6.59525C37.6321 6.2715 37.259 6.16975 36.9907 6.16667C36.7441 6.16667 36.371 6.26842 36.1027 6.74942L27.9473 23.4888C27.6298 24.0654 27.8209 24.3707 27.9504 24.5156Z" fill="#FFD633" />
+                                </svg>
+                            </div>
+                            <p class="advantages__name">GPS слежение</p>
+                            <p class="advantages__text">Контроль местоположения и состояния техники.</p>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__icon">
+                                <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.25 67.8333H74V74H9.25C4.15017 74 0 69.8498 0 64.75V0H6.16667V64.75C6.16667 66.4489 7.55108 67.8333 9.25 67.8333ZM52.4167 15.4167V21.5833H63.4735L46.25 38.8068L33.9167 26.4735L13.2368 47.1534L17.5966 51.5133L33.9167 35.1932L46.25 47.5265L67.8333 25.9432V37H74V15.4167H52.4167Z" fill="#FFD633" />
+                                </svg>
+                            </div>
+                            <p class="advantages__name">Активный рост</p>
+                            <p class="advantages__text">Постоянное расширение географии работы</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма -->
+        <section class="section section--type-1">
+            <div class="container">
+                <div class="contact-us">
+                    <div class="contact-us__wrapper">
+                        <div class="contact-us__left">
+                            <h2 class="contact-us__title">СВЯЖИТЕСЬ С НАМИ</h2>
+                            <p class="contact-us__subtitle">Если у вас есть вопросы по аренде нашей продукции, напишите, и мы ответим в ближайшее время.</p>
+                            <form action="" class="form form-contact-us">
+                                <input type="text" class="input" placeholder="Ваше имя">
+                                <input type="tel" class="input" placeholder="Телефон">
+                                <textarea class="textarea" placeholder="Ваш вопрос"></textarea>
+                                <div class="form-contact-us__bottom">
+                                    <button class="form-contact-us__btn" type="submit">Отправить</button>
+                                    <span class="form-contact-us__agree">
+                                        Нажимая кнопку “Отправить” я даю согласие 
+                                        на отправку и обработку своих персональных данных
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="contact-us__img">
+                            <img src="/assets/img/photo/form.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Отзывы -->
+        <section class="section section--type-1" id="reviews">
+            <div class="container">
+                <div class="reviews">
+                    <h2>ОТЗЫВЫ</h2>
+                    <div class="reviews__wrapper">
+                        <div class="reviews__item">
+                            <div class="review-card">
+                                <div class="review-card__top">
+                                    <p class="review-card__top-name">Иван Иванов</p>
+                                    <div class="review-card__top-stars">
+                                        <img src="/assets/img/icons/i-stars.svg" alt="">
+                                    </div>
+                                </div>  
+                                <p class="review-card__text">
+                                    Покупали технику у «Комтранс» в 2019 году.  Менеджеры «Комтранса» вели все этапы сделки, с радаров не пропадали, участвовали в сделке максимально. Осталось приятноевпечатление о технике и о самой компании.
+                                </p>
+                                <span class="review-card__bottom">17 ноября 2024г</span>
+                            </div>
+                        </div>
+                        <div class="reviews__item">
+                            <div class="review-card">
+                                <div class="review-card__top">
+                                    <p class="review-card__top-name">Иван Иванов</p>
+                                    <div class="review-card__top-stars">
+                                        <img src="/assets/img/icons/i-stars.svg" alt="">
+                                    </div>
+                                </div>  
+                                <p class="review-card__text">
+                                    Покупали технику у «Комтранс» в 2019 году.  Менеджеры «Комтранса» вели все этапы сделки, с радаров не пропадали, участвовали в сделке максимально. Осталось приятноевпечатление о технике и о самой компании.
+                                </p>
+                                <span class="review-card__bottom">17 ноября 2024г</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Наши клиенты -->
+        <section class="section section--type-1">
+            <div class="container">
+                <div class="clients">
+                    <h2>НАШИ КЛИЕНТЫ</h2>
+                    <div class="clients__wrapper">
+                        <div class="clients__item">
+                            <img src="/assets/img/clients/client-1.png" alt="">
+                        </div>
+                        <div class="clients__item">
+                            <img src="/assets/img/clients/client-2.png" alt="">
+                        </div>
+                        <div class="clients__item">
+                            <img src="/assets/img/clients/client-3.png" alt="">
+                        </div>
+                        <div class="clients__item">
+                            <img src="/assets/img/clients/client-4.png" alt="">
+                        </div>
+                        <div class="clients__item">
+                            <img src="/assets/img/clients/client-5.png" alt="">
+                        </div>
+                        <div class="clients__item">
+                            <img src="/assets/img/clients/client-6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Часто задаваемые вопросы -->
+        <section class="section section--type-1">
+            <div class="container">
+                <div class="faq">
+                    <h2>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
+                    <div class="faq__wrapper">
+                        <div class="faq__item">
+                            <div class="faq__item-question">
+                                <span>Какой минимальный срок аренды спецтехники? 
+                                    Возможно ли вернуть технику раньше срока договора?</span>
+                                <svg width="29" height="18" class="faq__item-icon" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.5 18L29 3.4303L25.5909 0L14.5 11.1515L3.41148 0L0 3.42788L14.5 18Z" />
+                                </svg>
+                            </div>
+                            <div class="faq__item-answer">
+                                <p>123</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__item-question">
+                                <span>Как быстро осуществляется доставка спецтехники заказчику?</span>
+                                <svg width="29" height="18" class="faq__item-icon" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.5 18L29 3.4303L25.5909 0L14.5 11.1515L3.41148 0L0 3.42788L14.5 18Z" />
+                                </svg>
+                            </div>
+                            <div class="faq__item-answer">
+                                <p>123</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__item-question">
+                                <span>Как сделать заказ спецтехники в аренду?</span>
+                                <svg width="29" height="18" class="faq__item-icon" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.5 18L29 3.4303L25.5909 0L14.5 11.1515L3.41148 0L0 3.42788L14.5 18Z" />
+                                </svg>
+                            </div>
+                            <div class="faq__item-answer">
+                                <p>123</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__item-question">
+                                <span>В каком регионе работает ваша компания?</span>
+                                <svg width="29" height="18" class="faq__item-icon" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.5 18L29 3.4303L25.5909 0L14.5 11.1515L3.41148 0L0 3.42788L14.5 18Z" />
+                                </svg>
+                            </div>
+                            <div class="faq__item-answer">
+                                <p>123</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="section section--type-1" id="contacts">
+            <div class="container">
+                <div class="contacts">
+                    <h2>КОНТАКТЫ</h2>
+                    <div class="contacts__wrapper">
+                        <div class="contacts__top">
+                            <div class="contacts__left">
+                                <ul class="contacts__list">
+                                    <li class="contacts__item">
+                                        <img src="/assets/img/icons/i-pin.svg" class="contacts__item-icon" alt="">
+                                        <div class="contacts__item-wrapper">
+                                            <p>г. Чебоксары, Вурнарское шоссе 7, офис 407</p>
+                                        </div>
+                                    </li>
+                                    <li class="contacts__item">
+                                        <img src="/assets/img/icons/i-phone.svg" class="contacts__item-icon" alt="">
+                                        <div class="contacts__item-wrapper">
+                                            <p>Директор: 
+                                                <a href="">8-903-345-56-90</a>, 
+                                                <a href="">8(8352)48-56-90</a>
+                                            </p>
+                                            <p>Заместитель руководителя: 
+                                                <a href="">8-961-339-33-23</a>
+                                            </p>
+                                            <p>Бухгалтерия: 
+                                                <a href="">8-962-321-17-23</a>,
+                                                <a href="">8(8352) 21-17-23</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="contacts__item">
+                                        <img src="/assets/img/icons/i-mail.svg" class="contacts__item-icon" alt="">
+                                        <div class="contacts__item-wrapper">
+                                            <p>
+                                                <a href="mailto:kamekc123@yandex.ru">kamekc123@yandex.ru</a>,
+                                                <a href="mailto:kamekc@bk.ru">kamekc@bk.ru</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contacts__right">
+                                <div class="contact-form">
+                                    <div class="contact-form__wrapper">
+                                        <h2 class="contact-form__title">СВЯЖИТЕСЬ С НАМИ</h2>
+                                        <p class="contact-form__subtitle">Если у вас есть вопросы по аренде нашей продукции, напишите, и мы ответим в ближайшее время.</p>
+                                        <form action="" class="form form-contact">
+                                            <input type="text" class="input" placeholder="Телефон">
+                                            <button class="form-contact__btn">
+                                                Отправить
+                                            </button>
+                                        </form>
+                                        <div class="contact-form__bottom">
+                                            <p class="contact-form__text">Свяжитесь с нами в мессенджерах:</p>
+                                            <ul class="social-list">
+                                                <li class="social-list__item">
+                                                    <a href="" class="social-list__link">
+                                                        <img src="/assets/img/icons/i-tg.svg" class="social-list__icon" alt="">
+                                                    </a>
+                                                </li>
+                                                <li class="social-list__item">
+                                                    <a href="" class="social-list__link">
+                                                        <img src="/assets/img/icons/i-viber.svg" class="social-list__icon" alt="">
+                                                    </a>
+                                                </li>
+                                                <li class="social-list__item">
+                                                    <a href="" class="social-list__link">
+                                                        <img src="/assets/img/icons/i-wa.svg" class="social-list__icon" alt="">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__map">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3541473203a59f04b362b8866d4367465f761c3373bfb87d33903f81dc2f89fe&amp;source=constructor" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__left footer__left--mobile">
+                    <a href="">
+                        <img src="/assets/img/icons/logo.svg" alt="">
+                    </a>
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link">
+                                <img src="/assets/img/icons/i-tg.svg" class="social-list__icon" alt="">
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link">
+                                <img src="/assets/img/icons/i-viber.svg" class="social-list__icon" alt="">
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link">
+                                <img src="/assets/img/icons/i-wa.svg" class="social-list__icon" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__top">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item">
+                            <a href="" class="footer-menu__link">аренда</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="" class="footer-menu__link">цены</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="" class="footer-menu__link">о компании</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="" class="footer-menu__link">отзывы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="" class="footer-menu__link">контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__contacts">
+                        <li class="footer__contacts-item">
+                            <a href="tel:8-903-345-56-90" class="footer__contacts-link">8-903-345-56-90</a>
+                        </li>
+                        <li class="footer__contacts-item">
+                            <a href="mailto:kamekc@bk.ru" class="footer__contacts-link">kamekc@bk.ru</a>
+                        </li>   
+                    </ul>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__left footer__left--desktop">
+                        <a href="">
+                            <img src="/assets/img/icons/logo.svg" alt="">
+                        </a>
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                                <a href="" class="social-list__link">
+                                    <img src="/assets/img/icons/i-tg.svg" class="social-list__icon" alt="">
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="" class="social-list__link">
+                                    <img src="/assets/img/icons/i-viber.svg" class="social-list__icon" alt="">
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="" class="social-list__link">
+                                    <img src="/assets/img/icons/i-wa.svg" class="social-list__icon" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__copyright">
+                        <p>© ООО «КАМЭКС»- аренда, услуги спецтехники (экскаваторы, самосвалы) </p>
+                    </div>
+                    <div class="footer__right">
+                        <a href="" class="footer__policy">Политика конфиденциальности</a>
+                    </div>
+                </div>
+                <a href="" class="footer__maker">© HI-TECH MEDIA</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal modal--form">
+        <div class="modal__body modal__body--form">
+            <div class="modal__wrapper modal__wrapper--form">
+                <button class="close-modal">
+                    <img src="/assets/img/icons/close.svg" alt="">
+                </button>
+                <div class="modal__info">
+                    <div class="modal-body">
+                        <h2 class="modal-body__title">СВЯЖИТЕСЬ С НАМИ</h2>
+                        <p class="modal-body__subtitle">Если у вас есть вопросы по аренде нашей продукции, напишите, и мы ответим в ближайшее время.</p>
+                        <form action="" class="form form-contact-us">
+                            <input type="text" class="input" placeholder="Ваше имя">
+                            <input type="tel" class="input" placeholder="Телефон">
+                            <textarea class="textarea" placeholder="Ваш вопрос"></textarea>
+                            <div class="form-contact-us__bottom">
+                                <button class="form-contact-us__btn" type="submit">Отправить</button>
+                                <span class="form-contact-us__agree">
+                                    Нажимая кнопку “Отправить” я даю согласие 
+                                    на отправку и обработку своих персональных данных
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/libs/jquery.min.js"></script>
+    <script src="/assets/libs/swiper-bundle.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/swiper.js"></script>
 </body>
 </html>

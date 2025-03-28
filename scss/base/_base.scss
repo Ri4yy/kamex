@@ -2,8 +2,13 @@
 
 html,
 body {
-    font-family: '';
+    font-family: "Mulish", sans-serif;
     scroll-behavior: smooth;
+    background: #333335;
+
+    @media(max-width: $breakpoint1280) {
+        overflow-x: hidden;
+    }
 }
 
 // Заголовки
@@ -11,7 +16,20 @@ h1 {
     color: $main-color;
 }
 h2 {
-    color: $main-color;
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+
+    @media(max-width: $breakpoint768) {
+        font-size: 36px;
+    }
+    @media(max-width: $breakpoint480) {
+        font-size: 32px;
+    }
+    @media(max-width: $breakpoint375) {
+        font-size: 26px;
+    }
 }
 h3 {
     color: $main-text;
@@ -36,13 +54,6 @@ h3 {
     }
     @media(max-width: $breakpoint768) {
         padding: 0 $padding-sm;
-    }
-}
-.section {
-    margin-top: $section-top;
-
-    @media(max-width: $breakpoint768) {
-        margin-top: 90px;
     }
 }
 

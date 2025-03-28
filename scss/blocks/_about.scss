@@ -1,0 +1,47 @@
+.about {
+
+    &__wrapper {
+        margin-top: 48px;
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @media(max-width: $breakpoint768) {
+            flex-direction: column;
+            align-items: start;
+        }
+        @media(max-width: $breakpoint480) {
+            margin-top: 20px;
+        }
+    }
+    &__text {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 126%;
+        color: #fff;
+
+        @media(max-width: $breakpoint1024) {
+            font-size: 16px;
+        }
+
+        & span {
+            color: $accent-color;
+        }
+    }
+
+    &__left {
+        width: 50%;
+
+        @media(max-width: $breakpoint768) {
+            width: 100%;
+        }
+    }
+    &__slider {
+        width: 50%;
+
+        @media(max-width: $breakpoint768) {
+            width: 100%;
+        }
+    }
+}

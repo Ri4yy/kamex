@@ -1,0 +1,115 @@
+.faq {
+
+    &__wrapper {
+        margin-top: 48px;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+        gap: 20px;
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 30px;
+            grid-template-columns: 1fr;
+        }
+        @media(max-width: $breakpoint480) {
+            margin-top: 20px;
+        }
+    }
+    &__item {
+        border: 1px solid $accent-color;
+        border-radius: 20px;
+        padding: 20px;
+        height: fit-content;
+
+        @media(max-width: $breakpoint480) {
+            padding: 10px;
+        }
+
+        &.active {
+            
+            & .faq__item {
+                &-answer {
+                    grid-template-rows: 1fr;
+
+                    & p {
+                        margin-top: 24px;
+
+                        @media(max-width: $breakpoint768) {
+                            margin-top: 20px;
+                        }
+                        @media(max-width: $breakpoint480) {
+                            margin-top: 14px;
+                        }
+                    }
+                }
+                &-question {
+                    & span {
+                        color: $main-color;
+                    }
+                }
+                &-icon {
+                    rotate: 180deg;
+                    fill: $main-color;
+                }
+            }
+        }
+
+        &-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+
+            & span {
+                max-width: 546px;
+
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 120%;
+                color: #fff;
+                pointer-events: none;
+
+                @media(max-width: $breakpoint768) {
+                    font-size: 18px;
+                }
+                @media(max-width: $breakpoint480) {
+                    font-size: 16px;
+                }
+            }
+        }
+        &-icon {
+            fill: #fff;
+            transition: all .3s;
+            pointer-events: none;
+            flex-shrink: 0;
+
+            @media(max-width: $breakpoint1024) {
+                width: 20px;
+            }
+        }
+
+        &-answer {
+            display: grid;
+            grid-template-rows: 0fr;
+            overflow: hidden;
+            transition: all 0.3s;
+
+            & p {
+                transition: all 0.3s;
+                min-height: 0;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 120%;
+                color: #fff;
+
+                @media(max-width: $breakpoint768) {
+                    font-size: 18px;
+                }
+                @media(max-width: $breakpoint480) {
+                    font-size: 16px;
+                }
+            }
+        } 
+    }
+}

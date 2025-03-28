@@ -1,36 +1,63 @@
 .header {
     position: relative;
-    background: #fff;
 
     &__wrapper {
         position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 29px 0;
+        padding: 28px 0;
         z-index: 2;
 
-        @media(max-width: $breakpoint768) {
-            padding: 20px 0;
-        }
         @media(max-width: $breakpoint480) {
-            padding: 16px 0;
+            padding: 18px 0;
         }
     }
 
-    &__contacts {
+    &__right {
         display: flex;
-        flex-direction: column;
-        align-items: end;
-    }
-    &__mail {
+        align-items: center;
+        gap: 36px;
 
+        @media(max-width: $breakpoint1280) {
+            display: none;
+        }
     }
-    &__phone {
+    &__btn {
+        border-radius: 15px;
+        padding: 14px 16px;
+        background: $main-color;
+        border: 1px solid $main-color;
 
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        font-weight: 500;
+        font-size: 24px;
+        text-align: center;
+        color: #fff;
+        transition: all .3s;
+
+        & svg {
+            width: 26px;
+            fill: #fff;
+            transition: fill .3s;
+        }
+
+        &:hover {
+            color: $main-color;
+            background: transparent;
+
+            & svg {
+                fill: $main-color;
+            }
+        }
     }
-}
 
-.logo {
-    
+    & .logo {
+        @media(max-width: $breakpoint480) {
+            max-width: 60px;
+        }
+    }
 }

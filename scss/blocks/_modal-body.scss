@@ -1,0 +1,30 @@
+.modal-body {
+
+    &__title {
+        font-size: 40px;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 24px;
+        }
+    }
+    &__subtitle {
+        margin-top: 32px;
+
+        font-weight: 300;
+        font-size: 32px;
+        color: #fff;
+
+        @media(max-width: $breakpoint480) {
+            margin-top: 18px;
+            font-size: 20px;
+        }
+    }
+
+    & .form-contact-us {
+        margin-top: 54px;
+
+        @media(max-width: $breakpoint480) {
+            margin-top: 6px;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.review-card {
+    display: flex;
+    flex-direction: column;
+
+    background: #f0f0ef;
+    border-radius: 12px;
+    padding: 24px 22px;
+    height: 100%;
+
+    background: #333335;
+    box-shadow: 0 0 33px 0 rgba(16, 16, 16, 0.57);
+
+    container: review / inline-size;
+
+    @container review (max-width: 550px) {
+        & .review-card__top-stars {
+            max-width: 140px;
+        }
+    }
+
+    @media(max-width: $breakpoint480) {
+        padding: 20px 16px;
+        box-shadow: 0 0 26px 0 rgba(16, 16, 16, 0.57);
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media(max-width: $breakpoint480) {
+            flex-wrap: wrap;
+            row-gap: 4px;
+        }
+
+        &-name {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 130%;
+            text-transform: capitalize;
+            color: #fff;
+
+            @media(max-width: $breakpoint768) {
+                font-size: 18px;
+                gap: 8px;
+            }
+
+            &::before {
+                content: url(/assets/img/icons/i-msg.svg);
+                height: 32px;
+
+                @media(max-width: $breakpoint480) {
+                    height: 27px;
+                }
+            }
+        }
+
+        &-stars {
+            @media(max-width: $breakpoint768) {
+                max-width: 130px !important;
+            }
+        }
+    }
+    &__text {
+        margin-top: 24px;
+        margin-bottom: 48px;
+
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 130%;
+        color: #fff;
+        
+        @media(max-width: $breakpoint768) {
+            margin: 16px 0 30px;
+            font-size: 15px;
+        }
+    } 
+    &__bottom {
+        display: block;
+        margin-block-start: auto;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        color: #fff;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 12px;
+        }
+    }
+}

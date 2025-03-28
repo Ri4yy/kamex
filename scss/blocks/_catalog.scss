@@ -1,0 +1,19 @@
+.catalog {
+
+    &__wrapper {
+        margin-top: 48px;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 30px;
+        }
+        @media(max-width: $breakpoint480) {
+            margin-top: 20px;
+            grid-template-columns: 1fr;
+        }
+    }
+    
+}

@@ -1,0 +1,204 @@
+.banner {
+    position: relative;
+
+    border: 1px solid $accent-color;
+    border-radius: 20px;
+    background: $secondary-color;
+    padding: 96px 0 96px 106px;
+
+    background-image: url(/assets/img/bg/banner-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media(max-width: $breakpoint1280) {
+        padding: 50px 0 50px 70px;
+    }
+    @media(max-width: $breakpoint768) {
+        margin-top: 34px;
+
+        background-image: url(/assets/img/bg/banner-bg-mobile.png);
+        background-position: right center;
+        height: 416px;
+        border-radius: 40px;
+    }
+    @media(max-width: $breakpoint600) {
+        margin-top: 17px;
+    }
+    @media(max-width: $breakpoint480) {
+        height: 210px;
+    }
+
+    &__left {
+        max-width: 600px;
+        
+        @media(max-width: $breakpoint768) {
+            display: none;
+        }
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #fff;
+
+        @media(max-width: $breakpoint992) {
+            font-size: 36px;
+        }
+    }
+    &__subtitle {
+        margin-top: 26px;
+        
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #fff;
+
+        @media(max-width: $breakpoint992) {
+            font-size: 20px;
+        }
+    }
+    &__inner {
+        margin-top: 46px;
+        display: flex;
+        align-items: center;
+        max-width: 300px;
+
+        &-right {
+
+        }
+        &-title {
+            font-weight: 1000;
+            font-size: 40px;
+            line-height: 100%;
+            color: $main-color;
+        }
+        &-text {
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 75%;
+            color: #fff;
+        }
+    }
+    &__btn {
+        margin-top: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 35px;
+        box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.25);
+        background: $main-color;
+        padding: 14px 32px;
+
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+
+        transition: background .3s;
+
+        &:hover {
+            background: #c77102;
+        }
+        &:active {
+            background: #df8106;
+        }
+
+        &--mobile {
+            display: none;
+            
+            @media(max-width: $breakpoint768) {
+                display: flex;
+            }
+        }
+        &--desktop {
+            @media(max-width: $breakpoint768) {
+                display: none;
+            }
+        }
+
+        @media(max-width: $breakpoint768) {
+            margin: 32px auto 0; 
+            padding: 20px 50px; 
+            font-size: 18px;
+        }
+        @media(max-width: $breakpoint480) {
+            margin: 17px auto 0; 
+            padding: 14px 30px; 
+            font-size: 16px;
+        }
+    }
+
+    &__hit {
+        position: absolute;
+        right: 0;
+        top: 200px;
+
+        @media(max-width: $breakpoint1280) {
+            top: 280px;
+        }
+        @media(max-width: $breakpoint768) {
+            display: none;
+        }
+
+        &-wrapper {
+            border-radius: 20px 0 0 20px;
+            background: rgba(51, 51, 53, 0.78);
+            padding: 12px 10px 6px 32px;
+
+            @media(max-width: $breakpoint992) {
+                max-width: 270px;
+                padding: 24px;
+            }
+        }
+        &-title {
+            position: relative;
+
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 1;
+            color: #fff;
+            text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            width: fit-content;
+
+            @media(max-width: $breakpoint1280) {
+                font-size: 40px;
+            }
+
+            &::after {
+                content: '';
+                background-image: url(/assets/img/icons/i-fire.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -50px;
+                height: 48px;
+                width: 43px;
+                aspect-ratio: 43 / 48;
+
+                @media(max-width: $breakpoint1280) {
+                    height: 40px;
+                }
+            }
+        }
+        &-text {
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 142%;
+            color: #fff;
+
+            @media(max-width: $breakpoint1280) {
+                font-size: 20px;
+            }
+            @media(max-width: $breakpoint992) {
+                line-height: 95%;
+                text-transform: lowercase;
+            }
+        }
+    }
+}

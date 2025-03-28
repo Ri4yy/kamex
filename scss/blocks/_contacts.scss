@@ -1,0 +1,108 @@
+.contacts {
+
+    &__wrapper {
+        margin-top: 48px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 30px;
+        }
+        @media(max-width: $breakpoint480) {
+            margin-top: 20px;
+            gap: 20px;
+        }
+    }
+    &__top {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        @media(max-width: 767px) {
+            grid-template-columns: 1fr;
+        }
+        @media(max-width: $breakpoint480) {
+            gap: 16px;
+        }
+    }
+    &__left {
+        border-radius: 12px;
+        background: #333335;
+        box-shadow: 0 0 33px 0 rgba(16, 16, 16, 0.57);
+
+        padding: 51px 40px 40px 40px;
+
+        @media(max-width: $breakpoint1280) {
+            padding: 22px 18px 30px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @media(max-width: $breakpoint1280) {
+            gap: 16px;
+        }
+    }
+    &__item {
+        display: flex;
+        gap: 30px;
+
+        @media(max-width: $breakpoint1280) {
+            gap: 10px;
+        }
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+
+            & p, a {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4px;
+                
+                font-weight: 400;
+                font-size: 24px;
+                color: #fff;
+
+                @media(max-width: $breakpoint1280) {
+                    font-size: 14px;
+                }
+                @media(max-width: $breakpoint480) {
+                    font-size: 14px;
+                }
+            }
+        }
+        &-icon {
+            width: 24px;
+
+            @media(max-width: $breakpoint1280) {
+                width: 16px;
+            }
+        }
+    }
+
+    &__map {
+        overflow: hidden;
+        border-radius: 20px;
+        height: 450px;
+        width: 100%;
+
+        @media(max-width: $breakpoint768) {
+            height: 300px;
+        }
+        @media(max-width: $breakpoint480) {
+            height: 145px;
+            border-radius: 10px;
+        }
+
+        & iframe {
+            height: inherit;
+            width: 100%;
+        }
+    }
+}

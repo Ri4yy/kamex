@@ -1,0 +1,30 @@
+.section {
+
+    &--type-1 {
+        padding: 48px 0;
+
+        @media(max-width: $breakpoint768) {
+            padding: 28px 0;
+        }
+        @media(max-width: $breakpoint480) {
+            padding: 18px 0;
+        }
+    }
+
+    &--banner {
+        @media(max-width: $breakpoint768) {
+            padding: 28px 0;
+        }
+        @media(max-width: $breakpoint480) {
+            padding: 18px 0;
+        }
+    }
+
+    &--order {
+        padding-bottom: 156px;
+
+        @media(max-width: $breakpoint1280) {
+            padding-bottom: 110px;
+        }
+    }
+}
