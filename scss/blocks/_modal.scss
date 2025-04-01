@@ -34,6 +34,14 @@
                 max-width: 100%;
             }
         }
+        &--success {
+            max-width: $modal-width;
+            width: 100%;
+    
+            @media(max-width: $breakpoint768) {
+                width: min(92%, $modal-width);
+            }
+        }
     }
 
     &__wrapper {
@@ -47,6 +55,17 @@
 
             @media(max-width: $breakpoint768) {
                 padding: 29px 17px;
+            }
+        }
+        &--success {
+            padding: 80px 60px;
+
+            @media(max-width: $breakpoint768) {
+                border-radius: 10px;
+                padding: 110px 50px;
+            }
+            @media(max-width: $breakpoint375) {
+                padding: 110px 30px;
             }
         }
     }
